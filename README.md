@@ -36,3 +36,47 @@ The system eliminates the need for manual attendance tracking and prevents issue
 - **os (standard library)**
 
 ---
+
+## 🛠️ How to Use
+
+1. **Install Required Libraries**
+   - Open your terminal or command prompt.
+   - Run the following command to install the required dependencies:
+     ```
+     pip install opencv-python face_recognition numpy
+     ```
+
+2. **Add Known Faces**
+   - Navigate to the `images/` directory.
+   - Add face images of people you want to recognize. Make sure:
+     - Each image file is named in the format: `RollNumber_Name.jpg` (e.g., `1_Arnav.jpg`).
+     - Each image contains one clear, front-facing face.
+
+3. **Run the System**
+   - Open the terminal in the project directory.
+   - Run the main script:
+     ```bash
+     python main.py
+     ```
+   - The webcam will activate and begin scanning for faces.
+
+4. **Mark Attendance**
+   - When a face is recognized:
+     - It will display the name and roll number on screen.
+     - It will log the attendance to `attendance.txt`.
+
+5. **Stop the System**
+   - To stop the webcam and end the program, press the `1` key.
+
+6. **Check Attendance**
+   - Open `attendance.txt`.
+   - You'll see entries with:
+     - Roll Number
+     - Name
+     - Date
+     - Count (number of times the person has been marked present)
+
+---
+
+
+
