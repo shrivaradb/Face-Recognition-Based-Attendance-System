@@ -39,3 +39,13 @@ The system eliminates the need for manual attendance tracking and prevents issue
 
 ## 📁 Project Structure
 
+Face_Recognition_Attendance_System/
+│
+├── images/ # Folder containing known faces (named like "101_John.jpg")
+│ ├── 101_John.jpg
+│ └── 102_Emma.jpg
+│
+├── attendance.txt # File where attendance records are saved
+├── main.py # Main Python script
+├── README.md # Project documentation (you are here)
+
